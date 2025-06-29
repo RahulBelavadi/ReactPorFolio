@@ -1,12 +1,14 @@
 import React from 'react'
 import { motion } from 'motion/react'
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdMarkEmailRead } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
+
+
 
 function Contact() {
 
-
-  //  initial={{ scale: 0, opacity: 0 }}
-    //  whileInView={{ scale: 1, opacity: 1 }}
-    //  transition={{ duration: 0.7, ease: 'easeOut' }}
+    
 
   return (
     <div className="contact">
@@ -17,7 +19,7 @@ function Contact() {
         transition={{duration:0.7,ease:"easeOut"}}
         viewport={{ once: true, amount: 0.6 }}
 
-        >Contact Me</motion.h1>
+        >Contact Me ✆</motion.h1>
         <div className="Contact-info">
             <motion.div className="contactLeft"
             
@@ -27,13 +29,20 @@ function Contact() {
             viewport={{ once: true, amount: 0.6 }}
             >
                 <div className="number">
-                    <h3>+7406263973</h3>
+                   <FaPhoneVolume/> <h3>+7406263973</h3>
                 </div>
                 <div className="email">
-                    <h3>Bboyrahul55.rb@gmail.com</h3>
+                   <MdMarkEmailRead/> <h3>Bboyrahul55.rb@gmail.com</h3>
                 </div>
                 <div className="linkedin">
-                    <h3>Linked IN</h3>
+                   <FaLinkedin/> <h3>Linked IN</h3>
+                </div>
+                <div className="social">
+
+                    <a href="https://www.instagram.com/rahul_shots?igsh=OTQzZXBjdXlha21u" target='_blank'><img id='img' src="/instagram.png" alt="" /></a>
+                    <a href="https://wa.me/+919901420573" target="_blank"><img id='img' src="/whatsapp.png" alt="" /></a>
+                    <a href="https://www.linkedin.com/in/rahul-belavadi-573543340" target='_blank'><img id='img' src="/linkedin.png" alt="" /></a>
+                    
                 </div>
             </motion.div>
 
@@ -53,6 +62,8 @@ function Contact() {
                 <button>Submit</button>
             </motion.div>
         </div>
+
+        <footer><h4><p>© 2025 Rahul. All rights reserved.</p></h4></footer>
     </div>
     
 

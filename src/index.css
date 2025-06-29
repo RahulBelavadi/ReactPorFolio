@@ -5,15 +5,16 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 body {
   width: 100%;
   height: 100vh;
-  color: white;
-
-
-
+  color: #ddc6c6;
 }
 
 .body {
@@ -21,7 +22,7 @@ body {
   width: 100%;
   min-height: 100vh;
   z-index: 0;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
 
 }
 
@@ -49,7 +50,7 @@ body {
 
 }
 
-.logo{
+.logo {
   background-color: rgb(3, 4, 27);
   margin-left: 2%;
   width: 50px;
@@ -60,7 +61,7 @@ body {
   border-radius: 50%;
 }
 
-#R-logo{
+#R-logo {
   width: 50px;
   height: 30px;
 }
@@ -75,13 +76,8 @@ body {
   align-items: center;
   border-radius: 15px;
   padding: 0 2% 0 2%;
-  
+
 }
-
-
-
-
-
 
 
 nav {
@@ -93,7 +89,41 @@ nav {
   width: 100%;
 
 }
-#Social-media{
+
+nav:hover {
+  background-color: rgb(128, 128, 128);
+}
+
+#menu{
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  scale: 0.8;
+  transition: scale 0.3s ease; 
+   display: none; 
+}
+
+#menu:hover{
+  scale: 1;
+}
+
+.Menuoptions{
+  width: 100px;
+  height: auto;
+  /* background-color: red; */
+  margin: 17% 2px 0 0;
+  padding: 10px 0 10px 0 ;
+  position: absolute;
+  right: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+
+}
+
+#Social-media {
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -103,12 +133,12 @@ nav {
 
 }
 
-#Social-media:hover{
+#Social-media:hover {
   box-shadow: 0 0 8px 5px aqua;
 }
 
 
-.links{
+.links {
   gap: 10px;
   display: flex;
   justify-content: center;
@@ -139,7 +169,7 @@ nav {
   border: none;
   width: 100px;
   height: 35px;
-  margin-top: 2%;
+  margin-top: 100px;
   border-radius: 10px;
 }
 
@@ -164,6 +194,10 @@ nav a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+
+
+
 
 #scroll {
   position: absolute;
@@ -253,6 +287,9 @@ nav a {
 
 }
 
+footer {
+  text-align: center;
+}
 
 /* --------------About------------------------------ */
 
@@ -271,9 +308,11 @@ nav a {
   padding: 40px;
   height: 100vh;
   /* background: transparent; */
-  color: white;
 
 }
+
+
+
 
 .grid-item {
   background: rgba(255, 255, 255, 0.05);
@@ -304,23 +343,66 @@ nav a {
   grid-column: span 1;
   grid-row: span 1;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   gap: 15px;
 
 }
+
+#tech-heading {
+  font-size: 2rem;
+  color: #00bcd4;
+  /* Aqua or Cyan */
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#tech-intro,
+#tech-summary {
+  font-size: 1.05rem;
+  /* color: #444; */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#tech-intro {
+  font-weight: 500;
+}
+
+#tech-summary {
+  font-style: italic;
+  /* color: #666; */
+}
+
+
+
+
+
+
 
 .item3 {
   grid-column: span 2;
   grid-row: span 1;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 
 }
+
+.item3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aqua {
+  color: aqua;
+}
+
 
 
 
@@ -329,10 +411,17 @@ nav a {
   grid-row: 1 / span 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
+
+  /* gap: 15px; */
+
+
   /* background-color: red; */
 
+}
+
+.class {
+  margin-top: 4%;
+  padding-left: 5%;
 }
 
 .item1,
@@ -356,9 +445,9 @@ nav a {
   text-align: center;
   mix-blend-mode: lighten;
   border-radius: 50%;
-
   background-color: transparent;
   padding: 5%;
+  /* background-color: red; */
 }
 
 .contact-btn {
@@ -368,8 +457,9 @@ nav a {
   border-radius: 8px;
   padding: 10px 20px;
   width: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+
+  margin-top: 5%;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s ease;
@@ -384,7 +474,6 @@ nav a {
 #Earth-vid {
   width: 80%;
   height: 90%;
-
   border-radius: 50%;
   padding: 1%;
 
@@ -400,9 +489,12 @@ nav a {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 10%;
+  margin-top: 20%;
+  margin-bottom: 100px;
 }
+
+
+
 
 .Projects {
   display: grid;
@@ -435,6 +527,9 @@ nav a {
 
 }
 
+
+
+
 #Card {
   width: 80%;
   height: 300px;
@@ -454,9 +549,9 @@ nav a {
   padding: 0% 2% 0 2%;
 }
 
-.Card-info button{
+.Card-info button {
 
- background-color: #17094996;
+  background-color: #17094996;
   color: white;
   border: none;
   border-radius: 8px;
@@ -471,12 +566,12 @@ nav a {
   margin-top: 1%;
 }
 
-.Card-info button:hover{
+.Card-info button:hover {
   box-shadow: 0 0 8px 2px rgb(55, 0, 255);
   cursor: pointer;
 }
 
-.share{
+.share {
   color: white;
   margin-right: 5px;
 }
@@ -495,24 +590,23 @@ nav a {
 }
 
 
+
+
 .Skills {
   /* background-color: red; */
   width: 100%;
   height: 100vh;
   display: grid;
-
-  /* Define 3 columns */
   grid-template-columns: 30% 40% 30%;
 
-  /* Define 2 rows: one fixed height, one flexible */
   grid-template-rows: 80% 20%;
-
-  /* Define grid areas */
   grid-template-areas:
     "left center right"
     "bottom bottom bottom";
 
 }
+
+
 
 
 
@@ -545,25 +639,32 @@ nav a {
 .right-S {
   grid-area: right;
   /* background-color: red; */
-  height: 200px;
+  height: 420px;
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: center;
   flex-direction: column;
   padding: 0 5% 0 8%;
-  margin-top: 25%;
+  margin-top: 7%;
+}
+
+.skilBox{
+  width: 100%;
+  /* background-color: rebeccapurple; */
 }
 
 .left-S {
   grid-area: right;
   /* background-color: red; */
-  height: 200px;
+  height: auto;
   display: flex;
+  width: 80%;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   padding: 0 5% 0 8%;
-  margin-top: 25%;
+  margin-top: 5%;
 
 }
 
@@ -574,22 +675,17 @@ nav a {
   justify-content: center;
   align-items: center;
   gap: 60px;
-  width: 60%;
+  width: 80%;
   overflow-y: hidden;
   overflow-x: auto;
-  margin: 2% auto 0 auto;
-  border-radius: 20px;
-  padding: 0 5%;
+  /* margin: 2% 0 2% auto; */
+  padding-left: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-right-radius: 50px;
+  /* padding: 0 5%; */
 }
 
-.translate {
-  /* background-color: red; */
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
 
 
 
@@ -624,7 +720,47 @@ nav a {
   width: 50px;
   height: auto;
   object-fit: cover;
+  border-radius: 50px;
 }
+
+.html,
+.css,
+.js,
+.React,
+.Redux,
+.Tailwind {
+  margin-bottom: 15px;
+  height: 5px;
+  background-color: aqua;
+  border-bottom-right-radius: 50px;
+  /* border-right: solid 20px white; */
+}
+
+.main {
+  margin-bottom: 15px;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(80, 79, 5, 0.89);
+  border-bottom-right-radius: 50px;
+}
+
+
+.MongoDB,
+.Mongoose,
+.JWT,
+.Bcrypt,
+.REST,
+.Express,
+.Node_js {
+  margin-bottom: 15px;
+  /* margin-top: 10px; */
+  height: 5px;
+  background-color: aqua;
+  border-bottom-right-radius: 50px;
+  /* border-right: solid 20px white; */
+}
+
+
 
 /* ----------------Contact--------------------------- */
 
@@ -644,8 +780,6 @@ nav a {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  /* background-color: rgb(53, 33, 33); */
   align-items: start;
   padding-top: 8%;
   padding-bottom: 10%;
@@ -662,10 +796,34 @@ nav a {
   width: 60%;
   height: 20%;
   margin-left: auto;
-  margin-top: 10%;
+  margin-top: 20%;
   /* margin: auto auto; */
 
 }
+
+.social {
+  display: flex;
+  gap: 20px;
+  /* background-color: red; */
+  width: 200px;
+  height: 80px;
+  font-size: 20px;
+}
+
+#img {
+  width: 30px;
+  object-fit: cover;
+
+  padding: 2%;
+  border-radius: 50px;
+
+}
+
+#img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px 2px aqua;
+}
+
 
 .contactRight {
   /* background-color: rgb(78, 18, 18); */
@@ -723,4 +881,199 @@ nav a {
 .contactRight button:hover {
   box-shadow: 0 0 8px 5px aqua;
   cursor: pointer;
+}
+
+.number,
+.email,
+.linkedin {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+
+  *{
+    font-size: 1rem;
+  }
+
+  .info{
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .Skills {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5% 0;
+    gap: 30px;
+  }
+
+  .Intro{
+     display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5% 0;
+    gap: 30px;
+  }
+  
+
+  .grid-container{
+
+     display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 5% 5% 5% 5%;
+    gap: 30px;
+  }
+
+   .bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: auto;
+  }
+
+  .Contact-info{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin: 0;
+   padding: 0;
+
+  }
+
+  /* nav{
+    display: flex;
+  } */
+
+  #scroll{
+    margin-top: 10%;
+    /* margin-bottom: 20%; */
+  }
+
+  .ToggleMenu{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 65%;
+    gap: 10px;
+    z-index: 1cd portfolio;
+  }
+
+  #menu{
+    display: block;
+    
+    position: absolute;
+    left: 85%;
+    top: 8px;
+  }
+
+  /* nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+  } */
+
+  
+
+  .links{
+    display: none;
+  }
+
+  #AboutMe{
+    margin-top: 30%;
+  }
+
+  .Projects{
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+
+  }
+  #Card{
+      width: 80%;
+      height: 150px;
+      object-fit: cover;
+  }
+  .Card-info h2{
+    font-size: 12px;
+    margin-top: 40%;
+  }
+  .Card-info button{
+    width: auto;
+    font-size: 10px;
+  }
+/* 
+  .contactLeft{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  } */
+
+  .contact,.Contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+.contactLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* background-color: red; */
+  width: 100%;
+  padding-left: 2%;
+}
+.contactRight,.contactRight input,.contactRight textarea{
+  width: 100%;
+  margin-bottom: 5%;
+}
+.contactRight label{
+  margin-right: 80%;
+  margin-bottom: 2%;
+}
+
+.contactRight button{
+  margin: 0 auto 0 auto;
+  
+}
+.contact-btn{
+  font-size: 10px;
+  width: 100px;
+}
+
+.body {
+  padding-bottom: 8%;
+
+}
+
+.herovideo{
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  display: block; 
+
+}
+
+.NavDiv{
+  display: none;
+}
+
+
+
 }

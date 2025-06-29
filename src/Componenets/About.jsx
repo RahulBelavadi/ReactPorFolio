@@ -3,7 +3,8 @@ import globe from '../Videos/glob.mp4'
 import {motion} from 'motion/react'
 
 function About() {
- return (<>
+ return (
+ <>
  <motion.h1
 
    initial={{ scale: 0, opacity: 0 }}
@@ -18,16 +19,21 @@ function About() {
       <motion.div
 
          initial={{ scale: 0, opacity: 0 }}
-         whileInView={{ scale: 1, opacity: 1 }}
+         whileInView={{ scale: 1, opacity: 1, }}
           transition={{ duration: 0.10, ease: 'easeOut' }}
         viewport={{ once: true, amount: 0.6 }}
 
          className="grid-item item1">
         <img id='rahul' src="/Rahul.jpg" alt="" />
-        <h2>Hi there, I'm Rahul</h2>
-        <p>
-          I'm a Full Stack Developer
-        </p>
+       <h2>Hi there, I'm Rahul 👋</h2>
+<p>
+  I'm a passionate Full Stack Developer who loves turning ideas into real-world, responsive web applications.
+</p>
+<p>
+  Skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js), I focus on building scalable, efficient, and user-friendly solutions.
+</p>
+
+
       </motion.div>
 
       <motion.div 
@@ -36,10 +42,18 @@ function About() {
       transition={{ duration: 0.9, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.6 }}
       className="grid-item item2">
-        <h2>Tech Stack</h2>
-        <p>
-          I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications, including HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, Git, GitHub, Tailwind CSS, Redux, Postman, and REST APIs..
-        </p>
+    <h2 id="tech-heading">🚀 Tech Stack</h2>
+
+<p id="tech-intro">
+  I build scalable web apps using the MERN stack — MongoDB, Express.js, React.js, and Node.js — along with tools like Git, GitHub, Tailwind CSS, Redux, and Postman.
+</p>
+
+<p id="tech-summary">
+  From clean UI to robust APIs, I turn ideas into fast, full-featured products.
+</p>
+
+
+
         {/* Replace icons below with actual icons if needed */}
         <div className="tech-icons">🔧 ⚛️ 🖥️ 📦 🔣</div>
       </motion.div>
@@ -53,11 +67,20 @@ function About() {
       
       className="grid-item item3">
   
-        <h2>My Passion for Coding</h2>
-        <p>
-          I love solving problems and building things through code. Programming isn’t just my profession—it’s my passion.
-          I enjoy exploring new technologies and enhancing my skills.
-        </p>
+        <h1>Trainings & Certifications</h1>
+      <ul>
+  <li>Build Your Own Capstone Project <span class="aqua">(Internshala, May–Jun 2025)</span></li>
+  <li>Mastering Node.js, Express.js And MongoDB <span class="aqua">(Internshala, Apr–May 2025)</span></li>
+  <li>Building Modern Web Applications Using React <span class="aqua">(Internshala, Mar–Apr 2025)</span></li>
+  <li>Cracking The Code: DSA In JavaScript I & II <span class="aqua">(Internshala, Jan–Mar 2025)</span></li>
+  <li>Developing Interactive Websites With JavaScript <span class="aqua">(Internshala, Dec 2024–Jan 2025)</span></li>
+  <li>Git And GitHub: Mastering Version Control <span class="aqua">(Internshala, Dec 2024)</span></li>
+  <li>Full Stack Development: Let's Begin <span class="aqua">(Internshala, Dec 2024)</span></li>
+  <li>Designing Web Pages Using HTML And CSS <span class="aqua">(Internshala, Dec 2024)</span></li>
+  <li>C For Everyone: Programming Fundamentals <span class="aqua">(UCSC Coursera, Jan–Feb 2024)</span></li>
+</ul>
+
+
       </motion.div>
 
       <motion.div className="grid-item item4"
@@ -71,8 +94,23 @@ function About() {
         <div className="earth-image">
           <video id='Earth-vid' loop autoPlay playsInline muted src={globe}></video>
         </div>
-        <h3>I'm very flexible with time zone communications & locations</h3>
-        <p>I'm based in Italy, Bari and open to remote work worldwide.</p>
+        <h1>My journey</h1>
+        <div className="class">
+          <ul>
+             <li>
+             <h3>Secondary (X)</h3>
+            <p>Chintamanrao high school</p>
+           </li><br />
+           <li>
+             <h3>Diploma in Computer Science</h3>
+            <p>R.N Shetty polytechnic</p>
+           </li>
+           
+          </ul>
+        
+        </div>
+        
+
         <button className="contact-btn">Contact Me</button>
       </motion.div>
     </div>

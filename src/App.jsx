@@ -21,11 +21,11 @@ function App() {
     <Nav/>
     
     <Suspense fallback={<div className="loader">Loading...</div>}>
-    <Intro/>
-    <About/>
-    <MyProjects/>
-    <Skills/>
-    <Contact/>
+    <section id="home"><Intro /></section>
+    <section id="about"><About /></section>
+    <section id="projects"><MyProjects /></section>
+    <section id="skills"><Skills /></section>
+    <section id="contact"><Contact /></section>
     </Suspense>
     </div>
   )

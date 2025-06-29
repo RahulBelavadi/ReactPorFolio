@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {motion} from 'motion/react'
 import { CiShare1 } from "react-icons/ci";
 
@@ -17,9 +17,18 @@ function MyProjects() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.6 }}
 
-      >My Projects</motion.h1>
+      >My Project 👩🏻‍💻ᝰ.ᐟ</motion.h1>
       <div className="Projects">
         {projects.map((val, ind) => {
+
+           let description = "Default project description.";
+
+          if (ind === 0) {
+            description = "A full-featured YouTube clone built using the MERN stack with JWT authentication. Users can register, log in, upload videos, and manage their profiles.";
+          } else if (ind === 1) {
+            description = "A fully responsive e-commerce platform inspired by Shopify, with product listings, shopping cart, payment gateway integration, and admin dashboard.";
+          }
+
           return (
             <React.Fragment key={ind}>
               <motion.div className="Left-project"
@@ -41,7 +50,7 @@ function MyProjects() {
               
               >
                 <div className="Card-info">
-                  <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima autem ab facere id et pariatur vitae corporis minus ratione accusamus.</h2>
+                  <h2>{description}</h2>
                   <button><CiShare1 className='share'/>Website</button>
                 </div>
               </motion.div>
