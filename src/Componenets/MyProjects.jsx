@@ -6,17 +6,20 @@ const projects = [
   {
     image: "/youtube.png",
     title: "YouTube Clone",
-    description: "Built a full-featured YouTube clone using MongoDB, Express, React, and Node.js. Implemented video upload, JWT-based authentication, search, likes, comments, and subscription system."
+    description: "Built a full-featured YouTube clone using MongoDB, Express, React, and Node.js. Implemented video upload, JWT-based authentication, search, likes, comments, and subscription system.",
+    link: "https://github.com/RahulBelavadi/Youtube_Clone.git"
   },
   {
     image: "/api2.webp",
     title: "ShoppyGlobe APIs",
-    description: "Created secure and scalable RESTful APIs for the ShoppyGlobe e-commerce platform using Node.js, Express.js, and MongoDB. Implemented JWT-based user authentication, product listings, and shopping cart functionalities."
+    description: "Created secure and scalable RESTful APIs for the ShoppyGlobe e-commerce platform using Node.js, Express.js, and MongoDB. Implemented JWT-based user authentication, product listings, and shopping cart functionalities.",
+    link: "https://github.com/RahulBelavadi/shoppyglobe-backend.git"
   },
   {
     image: "/Netflix.png",
     title: "Netflix Clone",
-    description: "A simple Netflix homepage clone built using HTML, CSS, and JavaScript. It features a clean layout, responsive design, and interactive elements like hover effects. This project helped me practice front-end web development and UI design."
+    description: "A simple Netflix homepage clone built using HTML, CSS, and JavaScript. It features a clean layout, responsive design, and interactive elements like hover effects. This project helped me practice front-end web development and UI design.",
+    link: "https://github.com/RahulBelavadi/Netflix_Clone.git"
   }
 ];
 
@@ -56,7 +59,9 @@ function MyProjects() {
               <div className="Card-info">
                 <h1>{project.title}</h1>
                 <p>{project.description}</p>
-                <button><CiShare1 className='share' />Website</button>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button><CiShare1 className='share' /> Website</button>
+                </a>
               </div>
             </motion.div>
           </React.Fragment>
