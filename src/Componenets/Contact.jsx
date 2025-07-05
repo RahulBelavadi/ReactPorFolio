@@ -63,7 +63,7 @@ function Contact() {
             </motion.div>
         </div>
 
-        <footer><h4><p>© 2025 Rahul. All rights reserved.</p></h4></footer>
+        <footer><h5><p>© 2025 Rahul. All rights reserved.</p></h5></footer>
     </div>
     
 
