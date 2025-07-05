@@ -131,10 +131,25 @@ function Skills() {
             ></motion.div>
            </div>
 
+            <label htmlFor="html">Git & Git-Hub </label>
+              <motion.h5 id='html-star'
+            initial={{marginLeft:0}}
+            animate={{marginLeft:"80%"}}
+            transition={{duration:2,delay:1.5}}
 
+            >80%</motion.h5>
+           <div className="main">
+             <motion.div className="Tailwind "
+              initial={{ width: 0 }}
+              whileInView={{ width: "80%" }}
+              transition={{ duration: 2, delay: 1.5 }}
+              viewport={{ once: true, amount: 0.6 }}
+            ></motion.div>
+           </div>
 
 
           </div>
+          
         </motion.div>
 
         <motion.div className="center"

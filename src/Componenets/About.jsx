@@ -77,7 +77,7 @@ function About() {
   <li>Git And GitHub: Mastering Version Control <span class="aqua">(Internshala, Dec 2024)</span></li>
   <li>Full Stack Development: Let's Begin <span class="aqua">(Internshala, Dec 2024)</span></li>
   <li>Designing Web Pages Using HTML And CSS <span class="aqua">(Internshala, Dec 2024)</span></li>
-  <li>C For Everyone: Programming Fundamentals <span class="aqua">(UCSC Coursera, Jan–Feb 2024)</span></li>
+  {/* <li>C For Everyone: Programming Fundamentals <span class="aqua">(UCSC Coursera, Jan–Feb 2024)</span></li> */}
 </ul>
 
 
@@ -94,19 +94,21 @@ function About() {
         <div className="earth-image">
           <video id='Earth-vid' loop autoPlay playsInline muted src={globe}></video>
         </div>
-        <h1>My journey</h1>
+          <h1>My Developer Journey</h1>
         <div className="class">
-          <ul>
-             <li>
-             <h3>Secondary (X)</h3>
-            <p>Chintamanrao high school</p>
-           </li><br />
-           <li>
-             <h3>Diploma in Computer Science</h3>
-            <p>R.N Shetty polytechnic</p>
-           </li>
-           
-          </ul>
+        
+       <ul>
+        <li>
+          <h3>2021 – Started Learning Web Development</h3>
+          <p>Began self-learning through YouTube tutorials and built my first portfolio using HTML, CSS, and JavaScript.</p>
+        </li>
+        <li>
+          <h3>2025 – Built Full Stack Projects</h3>
+          <p>Developed and deployed MERN stack applications on Netlify and Vercel with real-world features.</p>
+        </li>
+        </ul>
+
+
         
         </div>
         

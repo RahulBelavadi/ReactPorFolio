@@ -71,7 +71,7 @@ body {
 }
 
 .NavDiv {
-  background-color: rgba(128, 128, 128, 0.281);
+  background-color: rgba(128, 128, 128, 0.137);
   width: 40%;
   height: 80%;
   display: flex;
@@ -86,7 +86,7 @@ body {
 
 nav {
   display: flex;
-  background-color: rgba(128, 128, 128, 0.384);
+  background-color: rgba(128, 128, 128, 0.164);
   height: 50px;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +166,7 @@ nav:hover {
 
 .text {
   color: aqua;
+  font-size: 35px;
 }
 
 #Contact_me {
@@ -1123,6 +1124,28 @@ nav a {
 }
 .logo{
   margin-left: 12px;
+}
+
+.bottom{
+  /* background-color: red; */
+  width: 60%;
+  border-radius: 0;
+}
+
+
+footer{
+  margin-top: 6%;
+  margin-right: auto;
+  
+  
+}
+
+footer p{
+  font-size: 12px;
+}
+
+.text{
+  font-size: 20px;
 }
 
 }

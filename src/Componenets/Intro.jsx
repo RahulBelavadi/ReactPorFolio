@@ -35,7 +35,7 @@ function Intro() {
                     >{splitText("The Best")} </span> <br />Project <span className='text'>Experience</span></h1>
                     <br />
                     <h4> I'm a Full Stack Developer passionate about building responsive web applications using modern technologies like React, Node.js, Express, and MongoDB. I enjoy turning ideas into functional, user-friendly solutions.</h4>
-                    <button id='Contact_me'>Contact Me</button>
+                    <a href="#contact"><button id='Contact_me'>Contact Me</button></a>
                 </div>
             </div>
 
